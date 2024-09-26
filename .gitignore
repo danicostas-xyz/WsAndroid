@@ -1,0 +1,134 @@
+### General ###
+# IDE settings
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Gradle files
+.gradle/
+build/
+
+# Android Studio auto-generated files
+/captures/
+/.externalNativeBuild/
+
+# Keystore files (Sensitive data)
+*.keystore
+
+# SDK related files
+/.cxx/
+/.local/
+/ndk/
+*.apk
+*.ap_
+
+# Java class files
+*.class
+
+# Kotlin build files
+*.kt~
+*.kts~
+*.main.kts~
+
+# Generated files by Android
+generated/
+
+# Log, temp & backup files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.orig
+*.swo
+
+### Android ###
+# Android specific files
+/local.properties
+/.vscode/
+/.mvn/
+*/.idea/
+androidTest/
+app/build/
+*/build/
+*/src/test/
+/output.json
+/coverage/
+gradle.properties
+gradlew
+gradlew.bat
+gradle/
+build/
+gradle-wrapper.jar
+gradle-wrapper.properties
+node_modules/
+
+# Dependency directories
+/.gradle/
+/build/
+
+# JavaScript/Node.js (if used for React Native or similar)
+node_modules/
+yarn.lock
+package-lock.json
+
+# Other operating system files
+.DS_Store
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.swp
+*.lock
+*.iml
+*.ipr
+*.iws
+
+# JetBrains Rider specific
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/modules.xml
+.idea/.idea_modules.xml
+
+### Specific for IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Specific for Eclipse ###
+*.metadata
+*/.recommenders
+.project
+.classpath
+.cxx/
+.settings/
+
+# Python (if using)
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.pdb
+*.egg
+*.egg-info
+.venv/
+
+# Rust (if using)
+target/
+Cargo.lock
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
