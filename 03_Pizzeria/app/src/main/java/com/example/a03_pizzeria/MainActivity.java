@@ -31,10 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
         RadioGroup radioGroup = findViewById(R.id.radioGroup);
 
-        RadioButton rbGrande = findViewById(R.id.rbGrande);
-        RadioButton rbMediana = findViewById(R.id.rbMediana);
-        RadioButton rbPeque = findViewById(R.id.rbPeque);
-
         CheckBox cbPepperoni = findViewById(R.id.cbPepperoni);
         CheckBox cbJamon = findViewById(R.id.cbJamon);
         CheckBox cbAceitunas = findViewById(R.id.cbAceitunas);
@@ -52,24 +48,23 @@ public class MainActivity extends AppCompatActivity {
                 precioTamanho = 5;
             }
 
-            calcularPrecioTotal();
+            calcularPrecioTotal(tvPrecio);
         });
 
-        cbPepperoni.setOnClickListener(new PrecioIngredientes());
-        cbJamon.setOnClickListener(new PrecioIngredientes());
-        cbAceitunas.setOnClickListener(new PrecioIngredientes());
-        cbBacon.setOnClickListener(new PrecioIngredientes());
+        cbPepperoni.setOnClickListener(new PrecioIngredientes(this));
+        cbJamon.setOnClickListener(new PrecioIngredientes(this));
+        cbAceitunas.setOnClickListener(new PrecioIngredientes(this));
+        cbBacon.setOnClickListener(new PrecioIngredientes(this));
 
 
         btCalcularPrecio.setOnClickListener(view -> {
-
-            tvPrecio.setText(String.valueOf(calcularPrecioTotal()));
-
+            calcularPrecioTotal(tvPrecio);
         });
 
     }
-    private static int calcularPrecioTotal() {
-        return precioTamanho + precioIngredientes;
+    public void calcularPrecioTotal(TextView tvPrecio) {
+        int precioTotal = precioTamanho + precioIngredientes;
+        tvPrecio.setText(precioTotal + "€");
     }
 
 }
